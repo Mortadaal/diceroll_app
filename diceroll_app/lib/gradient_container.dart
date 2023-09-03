@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:diceroll_app/styled_text.dart';
+
 
 //widgets for at gøre ens kode mindre
 //hvilket også giver mulighed for at genbruge
@@ -20,8 +20,8 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Hello World!'),
+      child:  Center(
+        child: Image.asset('assets/images/dice-2.png',width: 200,),
       ),
     );
   }
