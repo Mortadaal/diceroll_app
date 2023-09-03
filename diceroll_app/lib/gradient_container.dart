@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 //widgets for at gøre ens kode mindre
 //hvilket også giver mulighed for at genbruge
 const startAlignment = Alignment.topLeft;
@@ -10,6 +9,9 @@ class GradientContainer extends StatelessWidget {
   const GradientContainer(this.colors, {super.key});
   final List<Color> colors;
 
+void rollDice(){
+  //..
+}
   @override
   Widget build(context) {
     return Container(
@@ -20,8 +22,17 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child:  Center(
-        child: Image.asset('assets/images/dice-2.png',width: 200,),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/dice-2.png',
+              width: 200,
+            ),
+            TextButton(onPressed: rollDice, child: const Text('Roll Dice'))
+          ],
+        ),
       ),
     );
   }
