@@ -1,0 +1,4 @@
+#Sun Sep 03 10:53:23 CEST 2023
+base.0=C\:\\Users\\morta\\SynologyDrive\\udemy_flutter\\diceroll_app\\diceroll_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
