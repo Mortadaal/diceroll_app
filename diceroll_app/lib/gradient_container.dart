@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-
+import 'package:diceroll_app/dice_roller.dart';
 //widgets for at gøre ens kode mindre
 //hvilket også giver mulighed for at genbruge
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colors, {super.key});
+   const GradientContainer(this.colors, {super.key});
   final List<Color> colors;
 
-void rollDice(){
-  //..
-}
+
   @override
   Widget build(context) {
     return Container(
@@ -22,17 +20,8 @@ void rollDice(){
           end: endAlignment,
         ),
       ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              'assets/images/dice-2.png',
-              width: 200,
-            ),
-            TextButton(onPressed: rollDice, child: const Text('Roll Dice'))
-          ],
-        ),
+      child:  const Center(
+        child: DiceRoller()
       ),
     );
   }
